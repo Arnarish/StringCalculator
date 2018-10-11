@@ -31,4 +31,6 @@ test("Empty string returns 0", () => {
 	expect(tester.add("-1, 2, -4, 7")).toBe("Negatives not allowed: -1, -4");
 	});
 	
-	
+	test("Test for number above 1k: 1000 + 2 = 2", () => {
+	expect(tester.add("1001, 2")).toBe(2);
+	});

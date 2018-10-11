@@ -7,9 +7,9 @@ class stringCalculator {
 			
 			return this.sum(
 				this.checkNegatives(
-					this.splitNumString(numString)
-					)
-				);
+					this.greaterthan1k(
+						this.splitNumString(numString)
+					)));
 	}
 	
 	splitNumString(numString) {
@@ -34,6 +34,12 @@ class stringCalculator {
 		 //array.reduce iterates through the array, summing up the elements saving me some code work, brilliant!
 		return string.reduce((accumulator, element) => accumulator + element);
 	}
+	
+	greaterthan1k(numString) {
+		//trims any number abive 1000 from the numString
+		return numString.filter((n) => n <= 1000);
+	}
+	
 };
 
 module.exports = {
