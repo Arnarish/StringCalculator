@@ -17,6 +17,13 @@ class stringCalculator {
 		let delimiter = /,|\n/;
 		let input = numString;
 		
+		//check to handle a different delimiter
+		if(numString.startsWith("//")) {
+			const newLineindex = numString.indexOf("\n");
+			delimiter = numString.substring(2, newLineindex);
+			input = numString.substring(newLineindex);
+		}
+		
 		const numArr = input.split(delimiter);
 		return numArr.map(Number);
 	}

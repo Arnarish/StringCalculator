@@ -34,3 +34,7 @@ test("Empty string returns 0", () => {
 	test("Test for number above 1k: 1000 + 2 = 2", () => {
 	expect(tester.add("1001, 2")).toBe(2);
 	});
+	
+	test("Testing with a new delimiter ;  1+2 equals 3", () => {
+		expect(tester.add("//;\n1;2")).toBe(3);
+	});
