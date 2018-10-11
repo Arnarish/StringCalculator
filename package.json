@@ -1,0 +1,22 @@
+{
+  "name": "stringcalculator",
+  "version": "1.0.0",
+  "description": "TDD verk H2018",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arnarish/StringCalculator.git"
+  },
+  "author": "Arnar Elvarsson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arnarish/StringCalculator/issues"
+  },
+  "homepage": "https://github.com/Arnarish/StringCalculator#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
