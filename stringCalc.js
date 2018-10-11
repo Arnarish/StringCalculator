@@ -12,7 +12,7 @@ class stringCalculator {
 	
 	splitNumString(numString) {
 		//only take the numbers from the styring, split by the delimiter
-		let delimiter = /,/;
+		let delimiter = /,|\n/;
 		let input = numString;
 		
 		const numArr = input.split(delimiter);
